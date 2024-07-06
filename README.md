@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# React starter template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template is for neobrutalism template creators (for this organization) who want to start building asap, without having to install and set everything from scratch.
 
-Currently, two official plugins are available:
+This template includes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- react 18
+- tailwind (with default variables from [styling docs](https://neobrutalism-components.vercel.app/docs/styling))
+- eslint + prettier (with plugin for sorting tailwind classnames)
+- cn utility function
 
-## Expanding the ESLint configuration
+## Get started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Once you join this organization (message me on [twitter](https://x.com/samuelbreznjak), and I'll send you an invite) make a new repo in this organization by clicking the "Use this template" button on the top right.
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+This template uses `pnpm` package manager so make sure you have it installed.
+
+To install all dependencies run:
+
+```bash
+pnpm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run the app locally:
+
+```bash
+pnpm run dev
+```
